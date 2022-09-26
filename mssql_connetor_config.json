@@ -1,0 +1,18 @@
+{
+    "name" : "confluent-microsoft-sql-source",
+    "connector.class": "MicrosoftSqlServerSource",
+    "kafka.auth.mode": "KAFKA_API_KEY",
+    "kafka.api.key": "<my-kafka-api-key>",
+    "kafka.api.secret" : "<my-kafka-api-secret>",
+    "topic.prefix" : "microsoftsql_",
+    "connection.host" : "<my-database-endpoint>",
+    "connection.port" : "1433",
+    "connection.user" : "<database-username>",
+    "connection.password": "<database-password>",
+    "db.name": "ms-sql-test",
+    "table.whitelist": "passengers",
+    "timestamp.column.name": "created_at",
+    "output.data.format": "JSON",
+    "db.timezone": "UCT",
+    "tasks.max" : "1"
+}
